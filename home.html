@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/homestyle.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+
+<body>
+    <nav class="navbar mb-3">
+        <div class="container-fluid px-5 justify-content-between">
+            <a class="navbar-brand fs-2 text-center fw-semibold text-white" href="#">Note Space</a>
+            <button class="btn btn-outline-success" id="logoutBtn">Logout <i
+                    class="ms-2 fa-solid fa-sign-out"></i></button>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-lg-4 p-4" style="height: fit-content;">
+                    <div class="personal py-5">
+                        <div class="profile-img position-relative" data-bs-toggle="collapse"
+                            data-bs-target="#all-avatars" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="" alt="profile">
+                            <div class="overlay top-0 bottom-0 start-0 end-0 position-absolute bg-black"></div>
+                        </div>
+                        <div id="all-avatars" class="collapse">
+                            <div class="container-fluid mt-5 px-4">
+                                <div class="row gy-4">
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box active">
+                                            <img src="avatars/0.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box">
+                                            <img src="avatars/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box">
+                                            <img src="avatars/2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box">
+                                            <img src="avatars/3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box">
+                                            <img src="avatars/4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box">
+                                            <img src="avatars/5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <div class="img-box">
+                                            <img src="avatars/6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="user-name" class="fs-2 text-white m-auto text-center mt-5"></h2>
+                    </div>
+                </div>
+                <div class="col-lg-8 p-4">
+                    <div class="note p-4 mb-4">
+                        <textarea name="" rows="2" id="new-note-input" placeholder="What's on your mind?"
+                            class="form-control mb-3" style="resize: none; overflow: hidden;"
+                            aria-expanded="true"></textarea>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button class="btn btn-outline-success" id="dirBtn" dir="ltr">Left to right</button>
+                            <button class="btn btn-outline-success" id="new-note-btn">New Note <i
+                                    class="ms-2 fa-solid fa-feather-pointed"></i></button>
+                        </div>
+                    </div>
+                    <div class="notes">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

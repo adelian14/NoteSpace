@@ -1,0 +1,82 @@
+/* submit button disabled */
+input.form-control:disabled {
+    opacity: 100%;
+    color: #777;
+    border-color: #777;
+}
+input.form-control:disabled:hover {
+    background-color: transparent;
+}
+
+/* submit button not disabled */
+.form-control[type='submit'] {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: .5s;
+}
+.form-control[type='submit']:hover {
+    background-color: #34454F;
+}
+.form-control[type='submit']:focus {
+    box-shadow: unset;
+}
+
+/* input */
+.form-control[type='email'],
+.form-control[type='password'],
+.form-control[type='text'] {
+    border: .5px solid white;
+    height: 2.7em;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+/* input focused */
+.form-control[type='email']:focus,
+.form-control[type='password']:focus,
+.form-control[type='text']:focus {
+    border-color: #80BDFF;
+    box-shadow: none;
+}
+
+header {
+    background-color: #24353F;
+}
+
+.login-container {
+    min-height: 100vh;
+}
+
+.signup-container {
+    min-height: 100vh;
+}
+
+.signup-card,.login-card {
+    width: 70%;
+    padding: 20px 16px;
+    background: #24353F;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+small{
+    color: #E55353;
+}
+
+.password-bar{
+    transition: .5s width;
+}
